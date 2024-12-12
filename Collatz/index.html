@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">    
+    <title>Conjetura de Collatz</title>
+</head>
+<body>
+    <div id="logo">
+        <img src="./assets/img/logo_White.svg" alt="logo">
+    </div>
+    <h1>Conjetura de Collatz</h1>
+    <div>
+        <p>Dado un número x:</p>
+        <ul>
+            <li>Si es par, se divide entre 2.</li>
+            <li>Si es impar, se multiplica por 3 y se suma 1.</li>
+        </ul>        
+    </div>
+    <div class="input">
+        <label for="collatz_number">Número:</label>
+        <input type="number" name="collatz_number" id="collatz_number" value="0" min="0">
+        <button id="calc_button">Calcular</button>
+    </div>
+    <div class="results">        
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Paso #</th>
+                    <th>Núm</th>
+                    <th>Par / Impar</th>
+                    <th>Operación</th>
+                    <th>Resultado</th>
+                </tr>                
+            </thead>
+            <tbody>                
+            </tbody>
+        </table>        
+    </div>  
+    <script src="./scripts/tasks.js"></script>  
+</body>
+</html>
